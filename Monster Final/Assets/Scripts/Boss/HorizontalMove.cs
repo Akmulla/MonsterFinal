@@ -4,6 +4,11 @@ using System.Collections;
 public class HorizontalMove : MonoBehaviour
 {
     public float speed;
+
+    void Start()
+    {
+        
+    }
 	
 	void Update ()
     {
@@ -17,4 +22,6 @@ public class HorizontalMove : MonoBehaviour
             speed *= -1;
         }
     }
+
+    
 }

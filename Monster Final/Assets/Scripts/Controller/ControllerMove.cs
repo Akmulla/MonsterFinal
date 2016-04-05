@@ -7,10 +7,13 @@ public class ControllerMove : MonoBehaviour
     private Vector3 movement=Vector2.zero;
     public float speed;
     public float rotationSpeed;
+    private ControllerReaction controllerReaction;
+
     // Use this for initialization
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        controllerReaction = GetComponent<ControllerReaction>();
     }
 
     // Update is called once per frame
@@ -22,7 +25,14 @@ public class ControllerMove : MonoBehaviour
 
     void FixedUpdate()
     {
-        rb.velocity = movement;
+        if (!controllerReaction.stunned)
+        {
+            rb.velocity = movement;
+        }
+        else
+        {
+            rb.velocity = Vector2.zero;
+        }
     }
     void Move()
     {

@@ -71,10 +71,14 @@
     <Compile Include="Assets\Reborn Asset\Scripts\Monster\Hand\HandReaction.cs" />
     <Compile Include="Assets\Reborn Asset\Scripts\Monster\MonsterAnimationFunctions.cs" />
     <Compile Include="Assets\Reborn Asset\Scripts\Monster\MonsterReaction.cs" />
-    <Compile Include="Assets\Scripts\Boundary.cs" />
+    <Compile Include="Assets\Scripts\Boss\Abilities\Active\Sniper\AimMove.cs" />
+    <Compile Include="Assets\Scripts\Boss\Abilities\Active\Sniper\AimShoot.cs" />
+    <Compile Include="Assets\Scripts\Boss\Abilities\Active\Sniper\Sniper.cs" />
+    <Compile Include="Assets\Scripts\Boss\BossReaction.cs" />
+    <Compile Include="Assets\Scripts\Boss\HorizontalMove.cs" />
+    <Compile Include="Assets\Scripts\Boss\VerticalMove.cs" />
     <Compile Include="Assets\Scripts\Controller\ControllerMove.cs" />
     <Compile Include="Assets\Scripts\Controller\ControllerReaction.cs" />
-    <Compile Include="Assets\Scripts\Edges.cs" />
     <Compile Include="Assets\Scripts\Enemy\Bonus\BonusMove.cs" />
     <Compile Include="Assets\Scripts\Enemy\Bonus\BonusReaction.cs" />
     <Compile Include="Assets\Scripts\Enemy\DangerZone\DangerZonePush.cs" />
@@ -85,11 +89,11 @@
     <Compile Include="Assets\Scripts\Enemy\EnemyInfo.cs" />
     <Compile Include="Assets\Scripts\Enemy\FoodReaction.cs" />
     <Compile Include="Assets\Scripts\Enemy\SwitchSprite.cs" />
-    <Compile Include="Assets\Scripts\Monster\HorizontalMove.cs" />
-    <Compile Include="Assets\Scripts\Monster\VerticalMove.cs" />
-    <Compile Include="Assets\Scripts\Pool.cs" />
-    <Compile Include="Assets\Scripts\PoolManager.cs" />
-    <Compile Include="Assets\Scripts\SpawnWaves.cs" />
+    <Compile Include="Assets\Scripts\System\Boundary.cs" />
+    <Compile Include="Assets\Scripts\System\Edges.cs" />
+    <Compile Include="Assets\Scripts\System\Pool.cs" />
+    <Compile Include="Assets\Scripts\System\PoolManager.cs" />
+    <Compile Include="Assets\Scripts\System\SpawnWaves.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

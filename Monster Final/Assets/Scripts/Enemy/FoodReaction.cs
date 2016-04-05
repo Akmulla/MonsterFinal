@@ -10,7 +10,7 @@ public class FoodReaction : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "Monster")
+        if (other.gameObject.tag == "Boss")
         {
             pool.Deactivate(gameObject);
         }

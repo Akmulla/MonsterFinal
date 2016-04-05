@@ -22,7 +22,6 @@ public class MonsterReaction : MonoBehaviour
     // Use this for initialization
     void Start ()
     {
-        //headAnim = GetComponentInChildren<Animator>();
         vert = GetComponentInParent<VerticalMove>();
         
     }

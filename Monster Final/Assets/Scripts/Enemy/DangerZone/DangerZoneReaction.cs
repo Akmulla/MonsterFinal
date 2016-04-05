@@ -12,12 +12,11 @@ public class DangerZoneReaction : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.name == "Hand")
+        if (other.gameObject.name == "Controller")
         {
-            if (!other.gameObject.GetComponent<HandReaction>().invincible)
-            {
+            
                 anim.SetTrigger("Boom");
-            }
+            
         }
     }
 
