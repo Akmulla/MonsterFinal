@@ -63,16 +63,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Reborn Asset\Scripts\Enemy\Citizen\CitizenMove.cs" />
-    <Compile Include="Assets\Reborn Asset\Scripts\Enemy\Citizen\CitizenReaction.cs" />
-    <Compile Include="Assets\Reborn Asset\Scripts\Enemy\DangerZone\DangerZonePush.cs" />
-    <Compile Include="Assets\Reborn Asset\Scripts\Enemy\DangerZone\DangerZoneReaction.cs" />
-    <Compile Include="Assets\Reborn Asset\Scripts\Enemy\Destroy.cs" />
-    <Compile Include="Assets\Reborn Asset\Scripts\Enemy\DestroyOnDanger.cs" />
-    <Compile Include="Assets\Reborn Asset\Scripts\Enemy\DestroyOnExit.cs" />
-    <Compile Include="Assets\Reborn Asset\Scripts\Enemy\EnemyInfo.cs" />
-    <Compile Include="Assets\Reborn Asset\Scripts\Enemy\FoodReaction.cs" />
-    <Compile Include="Assets\Reborn Asset\Scripts\Enemy\SwitchSprite.cs" />
     <Compile Include="Assets\Reborn Asset\Scripts\GameController.cs" />
     <Compile Include="Assets\Reborn Asset\Scripts\GameOverWindow.cs" />
     <Compile Include="Assets\Reborn Asset\Scripts\Helicopter\HelicopterLeave.cs" />
@@ -81,15 +71,25 @@
     <Compile Include="Assets\Reborn Asset\Scripts\Monster\Hand\HandReaction.cs" />
     <Compile Include="Assets\Reborn Asset\Scripts\Monster\MonsterAnimationFunctions.cs" />
     <Compile Include="Assets\Reborn Asset\Scripts\Monster\MonsterReaction.cs" />
-    <Compile Include="Assets\Reborn Asset\Scripts\Pool.cs" />
-    <Compile Include="Assets\Reborn Asset\Scripts\PoolManager.cs" />
-    <Compile Include="Assets\Reborn Asset\Scripts\SpawnWaves.cs" />
     <Compile Include="Assets\Scripts\Boundary.cs" />
     <Compile Include="Assets\Scripts\Controller\ControllerMove.cs" />
     <Compile Include="Assets\Scripts\Controller\ControllerReaction.cs" />
     <Compile Include="Assets\Scripts\Edges.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Bonus\BonusMove.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Bonus\BonusReaction.cs" />
+    <Compile Include="Assets\Scripts\Enemy\DangerZone\DangerZonePush.cs" />
+    <Compile Include="Assets\Scripts\Enemy\DangerZone\DangerZoneReaction.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Destroy.cs" />
+    <Compile Include="Assets\Scripts\Enemy\DestroyOnDanger.cs" />
+    <Compile Include="Assets\Scripts\Enemy\DestroyOnExit.cs" />
+    <Compile Include="Assets\Scripts\Enemy\EnemyInfo.cs" />
+    <Compile Include="Assets\Scripts\Enemy\FoodReaction.cs" />
+    <Compile Include="Assets\Scripts\Enemy\SwitchSprite.cs" />
     <Compile Include="Assets\Scripts\Monster\HorizontalMove.cs" />
     <Compile Include="Assets\Scripts\Monster\VerticalMove.cs" />
+    <Compile Include="Assets\Scripts\Pool.cs" />
+    <Compile Include="Assets\Scripts\PoolManager.cs" />
+    <Compile Include="Assets\Scripts\SpawnWaves.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

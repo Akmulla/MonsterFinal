@@ -5,12 +5,13 @@ public class SpawnWaves : MonoBehaviour
 {
     private PoolManager poolManager;
     [Header("Pool")]
-    private Pool citizenPool;
+    private Pool bonusPool;
     private Pool truckPool;
     private Pool boxPool;
     private Pool dangerZonePool;
     [Header("Wave Rates")]
-    public float citizenWaveRate;
+    //public float citizenWaveRate;
+    public float bonusWaveRate;
     public float truckWaveRate;
     public float boxWaveRate;
     public float dangerZoneWaveRate;
@@ -21,51 +22,45 @@ public class SpawnWaves : MonoBehaviour
     {
 
         poolManager = GameObject.Find("PoolManager").GetComponent<PoolManager>();
-        citizenPool = poolManager.GetPool("citizen");
+        bonusPool = poolManager.GetPool("bonus");
         truckPool = poolManager.GetPool("truck");
         boxPool = poolManager.GetPool("box");
         dangerZonePool= poolManager.GetPool("dangerZone");
-        StartCoroutine(SpawnCitizen());
-        //StartCoroutine(SpawnSoldier());
-        //StartCoroutine(SpawnTruck());
+        //StartCoroutine(SpawnCitizen());
         StartCoroutine(SpawnTruck());
         StartCoroutine(SpawnBox());
+        StartCoroutine(SpawnBonus());
         StartCoroutine(SpawnDangerZone());
     }
 	
 
-    IEnumerator SpawnCitizen()
+    //IEnumerator SpawnCitizen()
+    //{
+    //    while (true)
+    //    {
+    //        yield return new WaitForSeconds(Random.Range(0f, 2f));
+    //        float edge=(Random.Range(0.0f,1.0f)>0.5f) ? Edges.leftEdge:Edges.rightEdge;
+    //        Vector2 spawnPosition = new Vector2(edge, Edges.topEdge+1);
+    //        //Instantiate(citizen, spawnPosition, Quaternion.identity);
+
+    //        citizenPool.Activate(spawnPosition, Quaternion.identity);
+    //        yield return new WaitForSeconds(citizenWaveRate);
+    //    }
+    //}
+
+    IEnumerator SpawnBonus()
     {
         while (true)
         {
             yield return new WaitForSeconds(Random.Range(0f, 2f));
-            Vector2 spawnPosition = new Vector2(Random.Range((float)Edges.leftEdge+1.0f, (float)Edges.rightEdge-1.0f), Edges.topEdge+1);
+            float edge = (Random.Range(0.0f, 1.0f) > 0.5f) ? Edges.leftEdge : Edges.rightEdge;
+            Vector2 spawnPosition = new Vector2(edge, Edges.topEdge + 1);
             //Instantiate(citizen, spawnPosition, Quaternion.identity);
-            citizenPool.Activate(spawnPosition, Quaternion.identity);
-            yield return new WaitForSeconds(citizenWaveRate);
+
+            bonusPool.Activate(spawnPosition, Quaternion.identity);
+            yield return new WaitForSeconds(bonusWaveRate);
         }
     }
-
-    //IEnumerator SpawnSoldier()
-    //{
-    //    yield return new WaitForSeconds(startWait);
-    //    while (true)
-    //    {
-    //        Vector2 spawnPosition = new Vector2(Random.Range((float)Edges.leftEdge, (float)Edges.rightEdge), Edges.topEdge);
-    //        Instantiate(soldier, spawnPosition, Quaternion.identity);
-    //        yield return new WaitForSeconds(soldierWaveRate);
-    //    }
-    //}
-    //IEnumerator SpawnTruck()
-    //{
-    //    yield return new WaitForSeconds(startWait);
-    //    while (true)
-    //    {
-    //        Vector2 spawnPosition = new Vector2(Random.Range((float)Edges.leftEdge, (float)Edges.rightEdge), Edges.topEdge);
-    //        Instantiate(truck, spawnPosition, Quaternion.identity);
-    //        yield return new WaitForSeconds(truckWaveRate);
-    //    }
-    //}
 
     IEnumerator SpawnTruck()
     {
