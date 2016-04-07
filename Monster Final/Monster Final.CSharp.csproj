@@ -79,6 +79,7 @@
     <Compile Include="Assets\Scripts\Boss\BossInfo.cs" />
     <Compile Include="Assets\Scripts\Boss\BossReaction.cs" />
     <Compile Include="Assets\Scripts\Boss\HorizontalMove.cs" />
+    <Compile Include="Assets\Scripts\Boss\IncreaseRageByTime.cs" />
     <Compile Include="Assets\Scripts\Boss\RageBarDisplay.cs" />
     <Compile Include="Assets\Scripts\Boss\VerticalMove.cs" />
     <Compile Include="Assets\Scripts\Controller\ControllerMove.cs" />
