@@ -23,10 +23,11 @@ public class AimMove : MonoBehaviour
         if (!hold)
         {
             move = controller.position - transform.position;
-            transform.Translate(move * speed * Time.deltaTime);
+            transform.Translate(move.normalized * speed * Time.deltaTime);
 
-            if (move.magnitude<0.4)
+            if (move.magnitude<0.5f)
             {
+                hold = true;
                 StartCoroutine(StartAim());
             }
         }

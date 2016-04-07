@@ -4,10 +4,11 @@ using System.Collections;
 public class BossReaction : MonoBehaviour
 {
     Animator anim;
+    BossInfo bossInfo;
     // Use this for initialization
     void Start()
     {
-
+        bossInfo = GetComponent<BossInfo>();
     }
 
     // Update is called once per frame
@@ -17,14 +18,14 @@ public class BossReaction : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Object"))
+        if (other.gameObject.CompareTag(bossInfo.HitByObjectsOfType))
         {
-            GrabObject();
+            HitByObject();
         }
     }
 
-    void GrabObject()
+    void HitByObject()
     {
-
+        bossInfo.Rage += 7;
     }
 }
