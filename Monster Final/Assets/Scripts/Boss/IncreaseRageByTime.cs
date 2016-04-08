@@ -21,7 +21,7 @@ public class IncreaseRageByTime : MonoBehaviour
     {
         while(true)
         {
-            bossInfo.Rage += bossInfo.rageIncreaseValue*bossInfo.rageCoefficient;
+            bossInfo.Rage += bossInfo.rageIncreaseValue;
             yield return new WaitForSeconds(bossInfo.rageIncreaseSpeed);
         }
     }

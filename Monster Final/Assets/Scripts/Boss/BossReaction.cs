@@ -5,7 +5,7 @@ public class BossReaction : MonoBehaviour
 {
     Animator anim;
     BossInfo bossInfo;
-
+    GameObject asd;
     // Use this for initialization
     void Start()
     {
@@ -23,20 +23,16 @@ public class BossReaction : MonoBehaviour
         {
             HitByObject();
         }
-        else
-        if (other.gameObject.CompareTag("Bonus"))
-        {
-            GetBonus();
-        }
     }
 
     void HitByObject()
     {
-        bossInfo.Rage += 10;
+        bossInfo.Rage += 10*bossInfo.rageByObjectCoefficient;
     }
 
-    void GetBonus()
-    {
-        bossInfo.Rage -= 15;
-    }
+    //void GetBonus()
+    //{
+    //    bossInfo.Rage -= 15*bossInfo.bonusCoefficient;
+    //}
+    
 }

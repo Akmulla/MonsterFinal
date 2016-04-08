@@ -4,7 +4,8 @@ using System.Collections.Generic;
 public class BossInfo : MonoBehaviour
 {
     public string HitByObjectsOfType = "Object";
-    public float rageCoefficient = 1;
+    public float rageByObjectCoefficient = 1;
+    public float bonusCoefficient = 1;
 
     float rage;
     public float maxRage;

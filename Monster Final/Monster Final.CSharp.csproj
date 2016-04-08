@@ -76,6 +76,8 @@
     <Compile Include="Assets\Scripts\Boss\Abilities\Active\Sniper\AimShoot.cs" />
     <Compile Include="Assets\Scripts\Boss\Abilities\Active\Sniper\Sniper.cs" />
     <Compile Include="Assets\Scripts\Boss\Abilities\Passive\GarbageEater.cs" />
+    <Compile Include="Assets\Scripts\Boss\Abilities\Passive\Irritable.cs" />
+    <Compile Include="Assets\Scripts\Boss\Abilities\Passive\Restless.cs" />
     <Compile Include="Assets\Scripts\Boss\BossInfo.cs" />
     <Compile Include="Assets\Scripts\Boss\BossReaction.cs" />
     <Compile Include="Assets\Scripts\Boss\HorizontalMove.cs" />

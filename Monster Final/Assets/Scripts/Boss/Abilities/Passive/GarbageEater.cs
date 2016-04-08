@@ -8,8 +8,9 @@ public class GarbageEater : MonoBehaviour
 	void Start ()
     {
         bossInfo = GetComponent<BossInfo>();
-        bossInfo.HitByObjectsOfType ="None";
-        bossInfo.rageCoefficient = 3;
+        //bossInfo.HitByObjectsOfType ="None";
+        bossInfo.rageIncreaseSpeed = 0.5f;
+        bossInfo.rageByObjectCoefficient = -1;
     }
 	
 	// Update is called once per frame
