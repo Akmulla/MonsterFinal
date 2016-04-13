@@ -16,7 +16,11 @@ public class BossInfo : MonoBehaviour
     // Use this for initialization
     void Start ()
     {
-        GetAbilities();
+        for (int i=0;i<2;i++)
+        {
+            GetAbilities();
+        }
+        
         rage = 0;
 	}
 	

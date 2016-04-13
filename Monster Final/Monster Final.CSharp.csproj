@@ -72,9 +72,11 @@
     <Compile Include="Assets\Reborn Asset\Scripts\Monster\MonsterAnimationFunctions.cs" />
     <Compile Include="Assets\Reborn Asset\Scripts\Monster\MonsterReaction.cs" />
     <Compile Include="Assets\Scripts\Boss\Abilities\AbilityManager.cs" />
+    <Compile Include="Assets\Scripts\Boss\Abilities\Active\OrbitalStrike\OrbitalStrike.cs" />
     <Compile Include="Assets\Scripts\Boss\Abilities\Active\Sniper\AimMove.cs" />
     <Compile Include="Assets\Scripts\Boss\Abilities\Active\Sniper\AimShoot.cs" />
     <Compile Include="Assets\Scripts\Boss\Abilities\Active\Sniper\Sniper.cs" />
+    <Compile Include="Assets\Scripts\Boss\Abilities\Passive\Charger.cs" />
     <Compile Include="Assets\Scripts\Boss\Abilities\Passive\GarbageEater.cs" />
     <Compile Include="Assets\Scripts\Boss\Abilities\Passive\Irritable.cs" />
     <Compile Include="Assets\Scripts\Boss\Abilities\Passive\Restless.cs" />
@@ -86,6 +88,7 @@
     <Compile Include="Assets\Scripts\Boss\VerticalMove.cs" />
     <Compile Include="Assets\Scripts\Controller\ControllerMove.cs" />
     <Compile Include="Assets\Scripts\Controller\ControllerReaction.cs" />
+    <Compile Include="Assets\Scripts\Controller\rotate.cs" />
     <Compile Include="Assets\Scripts\Enemy\Bonus\BonusMove.cs" />
     <Compile Include="Assets\Scripts\Enemy\Bonus\BonusReaction.cs" />
     <Compile Include="Assets\Scripts\Enemy\DangerZone\DangerZonePush.cs" />

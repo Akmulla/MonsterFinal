@@ -7,11 +7,15 @@ public class ControllerReaction : MonoBehaviour
     public float stunDuration;
     public GameObject Boss;
     private BossInfo bossInfo;
+    private Animator anim;
+    private VerticalMove vert;
 
     void Start()
     {
         stunned = false;
         bossInfo = Boss.GetComponent<BossInfo>();
+        anim = GetComponentInChildren<Animator>();
+        vert = GetComponent<VerticalMove>();
     }
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -34,13 +38,20 @@ public class ControllerReaction : MonoBehaviour
     }
     void GetHit()
     {
+        anim.SetBool("Stun", true);
         stunned = true;
         StartCoroutine(Stun());
+        vert.speed = 0.0f;
     }
-
+    void EndStun()
+    {
+        anim.SetBool("Stun", false);
+        stunned = false;
+        vert.speed = 1.0f;
+    }
     IEnumerator Stun()
     {
         yield return new WaitForSeconds(stunDuration);
-        stunned = false;
+        EndStun();
     }
 }

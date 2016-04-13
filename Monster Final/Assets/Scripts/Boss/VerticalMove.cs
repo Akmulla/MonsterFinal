@@ -13,6 +13,6 @@ public class VerticalMove : MonoBehaviour
 
 	void Update ()
     {
-        transform.Translate(Vector2.up * speed * Time.deltaTime);
+        transform.Translate(Vector2.up * speed * Time.deltaTime,Space.World);
     }
 }
